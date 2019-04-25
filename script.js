@@ -51,3 +51,22 @@ function panggilAngka() {
 }
 
 //object
+//kalau array hanya bisa menampung satu jenis data, object bisa nampung banyak data.
+
+var profil = {
+    nama: "Tazirah Marwan",
+    umur: 23,
+    sudahKuliah: true,
+}
+
+var pendidikanTerakhir = "";
+
+console.log(profil.umur);
+
+if(profil.sudahKuliah) {
+    pendidikanTerakhir = "seorang sarjana";
+} else {
+    pendidikanTerakhir = "sedang Kuliah";
+}
+
+document.getElementById("profil").innerHTML = "nama saya " + profil.nama + ". saya berumur " + profil.umur + " tahun dan saya " + pendidikanTerakhir;
