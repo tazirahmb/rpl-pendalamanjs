@@ -8,12 +8,13 @@
 </head>
 <body>
     <p id="profil"></p>
-    <input type="number" id="index">
+    <input type="number" id="iniindex">
     <br>
     <input type="checkbox" name="mencari" id="mencari" value="sedang mencari">
-    <label for="">mencari index</label>
+    <label for="">mencari index</label> 
     <br>
-    <button onclick="panggilAngka()">Click</button>
+    <!-- perhatikan onclick. cukup memanggil nama ID-nya saja dan spesifiknya mau mengambil data apa. -->
+    <button onclick="panggilAngka(iniindex.value, mencari.checked)">Click</button>
     <div id="result"></div>
     <div id="namaAnak"></div>
     <script src="script.js"></script>
